@@ -1,0 +1,11 @@
+.text {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  color: thistle;
+  text-align: center;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
