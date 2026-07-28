@@ -1,0 +1,54 @@
+.heading {
+  font-size: 100px;
+}
+
+.start {
+  font-size: 30px;
+  /* text-align: start; */
+}
+
+.center {
+  text-align: center;
+  font-size: 30px;
+
+  color: royalblue;
+}
+
+.end {
+  text-align: end;
+  font-size: 30px;
+}
+
+.letter {
+  letter-spacing: 50px;
+}
+
+.paragraph {
+  word-spacing: 30px;
+  text-indent: 500px;
+  line-height: 50px;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.weight {
+  font-weight: 800;
+}
