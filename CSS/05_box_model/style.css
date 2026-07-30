@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+
+  margin: auto;
+  margin-top: 20px;
+  height: 500px;
+  width: 500px;
+  background-color: cornflowerblue;
+  padding: 50px;
+
+  /* padding-top: 50px; */
+  /* padding-left: 50px; */
+  /* padding-right: 50px; */
+  /* padding-bottom: 50px; */
+
+  /* border */
+
+  /* border:5px;
+    border-style: double;
+    border-color: red; */
+
+  border: 5px double red;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: burlywood;
+}
