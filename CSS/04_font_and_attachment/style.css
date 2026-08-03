@@ -1,12 +1,10 @@
 @font-face {
-  font-family: openSans;
+  font-family:openSans ;
   src: url("./asset/open-sans/OpenSans-BoldItalic.ttf");
 }
 
 .inbuit {
-  font-family:
-    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .external {
@@ -28,4 +26,9 @@
 .bank{
     font-size: 100px;
     color: slateblue;
+}
+
+.home,.verify{
+  font-size: 200px;
+  color: darkturquoise;
 }
