@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  border: 2px solid black;
+}
+
+#home ,#footer{
+  border: 5px solid red;
+  text-align: center;
+  height: 800px;
+}
+
+
+.background{
+    background-image: url("https://images.pexels.com/photos/26926327/pexels-photo-26926327.jpeg");
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}

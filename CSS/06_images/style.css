@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+  height: 800px;
+  width: 800px;
+  border: 2px solid black;
+
+}
+
+
+.container img{
+      object-fit: contain;
+} */
+
+.background {
+  /* background-image: url("https://images.pexels.com/photos/16771889/pexels-photo-16771889.jpeg"); */
+
+  background-image: url("./asset/pexels-alex-amorales-321095-909907.jpg");
+  height: 800px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}

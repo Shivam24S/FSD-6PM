@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+
+.box{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.linear{
+    background-image: linear-gradient(blue,pink);
+    background-image: linear-gradient(45deg,yellow,red,green,blue);
+    background-image: linear-gradient(to bottom left,yellow,red,green,blue);
+}
+
+.radial{
+    background-image: radial-gradient(yellow ,green);
+    background-image: radial-gradient(circle,orange,red);
+    background-image: radial-gradient(ellipse,orange,red);
+}
+
+.conic{
+    background-image: conic-gradient(red,green,blue);
+    background-image: conic-gradient(from 45deg,red,green,blue);
+}
