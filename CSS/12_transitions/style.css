@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+  margin: 50px auto;
+  text-align: center;
+  background-color: steelblue;
+  /* transition-duration: 2s;
+  transition-delay: 1s;
+  transition-property: background-color, border-radius;
+  transition-timing-function: cubic-bezier(0.54,-0.41, 0, 0.81); */
+  transition:
+    2s background-color,
+    border-radius cubic-bezier(0.54, -0.41, 0, 0.81) 1s;
+}
+
+.box:hover {
+  background-color: brown;
+  border-radius: 50%;
+}
