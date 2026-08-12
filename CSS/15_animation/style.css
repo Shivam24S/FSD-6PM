@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 800px;
+  width: 800px;
+  margin: 10px auto;
+  border: 2px solid black;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  transition: 2s all ease-in-out;
+  animation-name: box;
+  animation-duration: 5s;
+  background-color: cornflowerblue;
+  animation-iteration-count: 2;
+  animation-delay: 2s;
+  animation-play-state: running;
+}
+
+@keyframes box {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(650px, 0);
+  }
+  50% {
+    transform: translate(650px, 650px);
+  }
+  75% {
+    transform: translate(0, 650px);
+  }
+}
+
+.btn {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  border: none;
+  margin-left: 600px;
+  color: white;
+  border-radius: 5px;
+  animation-name: button;
+  animation-duration: 2s;
+  animation-iteration-count: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes button {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    box-shadow: rgba(235, 6, 6, 0.747) 0px 5px 15px;
+  }
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  margin: auto;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+        
+    }to{
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+
+
