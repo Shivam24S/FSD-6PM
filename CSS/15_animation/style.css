@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* transition: 2s all ease-in-out; */
 }
 
 .container {
@@ -50,7 +51,7 @@
   border-radius: 5px;
   animation-name: button;
   animation-duration: 2s;
-  animation-iteration-count: 2s;
+  animation-iteration-count:infinite;
   animation-fill-mode: backwards;
 }
 
@@ -74,14 +75,45 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes rotate{
-    from{
-        transform: rotate(0deg);
-        
-    }to{
-        transform: rotate(360deg);
-        border-radius: 50%;
-    }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
 }
 
 
+.sun {
+  height: 800px;
+  width: 800px;
+  border: 2px solid black;
+   border-radius: 50%;
+   margin: 50px auto;
+   background-image: radial-gradient(circle,yellow,red);
+    animation-name: sun;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+   
+}
+
+.earth{
+  height: 200px;
+  width: 200px;
+  border: 2px double black;
+  border-radius: 50%;
+  background-image:radial-gradient(rgb(142, 142, 255),rgb(64, 255, 64));
+ 
+
+}
+
+
+@keyframes sun{
+  from{
+    transform: rotate(0deg);
+  }to {
+    transform: rotate(360deg);
+  }
+}
