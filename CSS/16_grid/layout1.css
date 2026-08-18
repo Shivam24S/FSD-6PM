@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 800px;
+  width: 800px;
+  border: 2px solid black;
+  margin: 10px auto;
+  display: grid;
+  grid-template-areas:
+    "hdr hdr hdr hdr"
+    "sbr main main main"
+    "sbr main main main"
+    "ftr ftr ftr ftr";
+    text-align: center;
+}
+
+.box{
+    border: 2px solid black;
+}
+
+#box-1{
+    grid-area: hdr;
+    background-color: cornflowerblue;
+}
+
+#box-2{
+    grid-area: sbr;
+    background-color: tomato;
+}
+
+#box-3{
+    grid-area: main;
+    background-color: teal;
+}
+
+#box-4{
+    grid-area: ftr;
+    background-color:thistle;
+}
