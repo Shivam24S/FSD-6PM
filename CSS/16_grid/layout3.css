@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 800px;
+    width: 800px;
+    border: 2px solid black;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.box{
+     border: 2px solid black;
+    
+}
+
+#box-1{
+    background-color: thistle;
+    grid-row: 1/4;
+}
+
+
+#box-2{
+    background-color: tomato;
+    grid-column: 2/4;
+}
+
+#box-3{
+    background-color: tan;
+
+}
+
+
+#box-6{
+    background-color: springgreen;
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+#box-4,#box-5,#box-7,#box-8{
+    background-color: slateblue;
+}

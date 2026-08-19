@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    height: 800px;
+    width: 800px;
+    border: 2px solid black;
+    display: grid;
+    margin: 10px auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.box{
+    border: 2px solid black;
+}
+
+
+#box-1{
+    background-color: slategray;
+    grid-column: 1/-1;
+
+}
+
+#box-2{
+    background-color: skyblue;
+    grid-row: 2/4;
+
+}
+
+#box-3{
+    background-color: teal;
+    grid-column: 2/-1;
+
+}
+
+#box-4{
+    background-color: rgb(231, 209, 209);
+}
+
+#box-5{
+    background-color: silver;
+}
+
+#box-6{
+    background-color: seagreen;
+    grid-column: 1/-1;
+}
