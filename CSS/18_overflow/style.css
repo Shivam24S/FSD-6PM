@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container{
+    margin: 10px auto;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    /* overflow: visible; */
+    overflow-x: hidden;
+}

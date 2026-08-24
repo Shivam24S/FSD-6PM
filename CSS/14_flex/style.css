@@ -10,7 +10,7 @@
   border: 2px solid black;
   margin: 10px auto;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   /* flex-wrap:wrap; */
   /* flex-flow: row wrap; */
   /* justify-content: center; */
@@ -28,33 +28,33 @@
 }
 
 
-#box-5{
+/* #box-5{
     order: 1;
     background-color: brown;
 
-}
+} */
 
-#box-1{
+/* #box-1{
     order: 2;
     background-color: blueviolet;
-}
+} */
 
-#box-3{
+/* #box-3{
     background-color: cadetblue;
     flex-basis: 500px;
-}
+} */
 
-#box-4{
+/* #box-4{
     background-color: tomato;
     flex-grow: 2;
-}
+} */
 
-#box-6{
+/* #box-6{
     background-color: cornflowerblue;
     flex-shrink: 3;
-}
+} */
 
-#box-2{
+/* #box-2{
     background-color: teal;
     flex: 2 1 600px;
-}
+} */
