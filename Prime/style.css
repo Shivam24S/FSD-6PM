@@ -21,6 +21,7 @@ body {
   color: white;
   background-color: #00050d;
   transition: all 0.1s ease-in-out;
+  overflow-x: hidden;
 }
 
 nav {
@@ -28,7 +29,7 @@ nav {
   justify-content: space-between;
   padding: 15px 50px;
   background-color: #00050c;
-  background: linear-gradient(from bottom, rgb(0.0.85), rgb(0.0.0));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgb(0,0,0,0));
 }
 
 header {
@@ -153,21 +154,27 @@ nav a:hover {
   position: relative;
 }
 
+.movie-detail{
+  position: relative;
+
+}
+
 .description {
   font-weight: 700;
   font-size: 18px;
-  /* display: none; */
+  display: none;
   position: relative;
 }
 
-.rank:hover .description {
-  /* display: block;
-  position: absolute; */
+.movie-detail:hover .description {
+  display: block;
+  position: absolute;
 }
 
 .buttons {
   display: flex;
   gap: 20px;
+  margin-top: 50px;
 }
 
 .btn-join-prime {
@@ -201,8 +208,58 @@ nav a:hover {
   font-size: 20px;
 }
 
-.bag{
-  color: #FFD62C;
+.bag {
+  color: #ffd62c;
   font-size: 15px;
   font-weight: 600;
+}
+
+
+.movies{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 100px;
+}
+
+.movie-title{
+  display: flex;
+  gap: 50px;
+}
+
+.movie-card-wrapper{
+  display: flex;
+  gap: 20px;
+}
+
+.movie-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
+  transition: all 1s;
+
+}
+
+.movie-card:hover{
+  transform: scale(1.1);
+}
+
+
+
+.movie-image img{
+  height: 22vh;
+  width: 20vw;
+  border-radius: 10px;
+}
+
+.movie-hidden-detail{
+  background-color: black;
+  display: none;
+}
+
+.movie-card:hover .movie-hidden-detail{
+  display: block;
+
 }
