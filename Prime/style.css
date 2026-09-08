@@ -132,8 +132,10 @@ nav a:hover {
   background-image: url(./asset/movie.avif);
   height: 90vh;
   width: 100vw;
-  background-size: contain;
+  background-size: cover;
+  /* background-size: contain; */
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
@@ -214,12 +216,16 @@ nav a:hover {
   font-weight: 600;
 }
 
+/* #movie-section{
+  margin-top: 50px;
+} */
 
 .movies{
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-left: 100px;
+  margin-top: 30px;
 }
 
 .movie-title{
@@ -235,10 +241,11 @@ nav a:hover {
 .movie-card{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
   border-radius: 10px;
   position: relative;
   transition: all 1s;
+  width: 20vw;
 
 }
 
@@ -250,13 +257,14 @@ nav a:hover {
 
 .movie-image img{
   height: 22vh;
-  width: 20vw;
+  width: 100%;
   border-radius: 10px;
 }
 
 .movie-hidden-detail{
   background-color: black;
   display: none;
+   border-radius: 10px;
 }
 
 .movie-card:hover .movie-hidden-detail{
