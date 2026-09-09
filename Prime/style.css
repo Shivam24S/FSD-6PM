@@ -29,7 +29,7 @@ nav {
   justify-content: space-between;
   padding: 15px 50px;
   background-color: #00050c;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgb(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgb(0, 0, 0, 0));
 }
 
 header {
@@ -151,14 +151,14 @@ nav a:hover {
   margin-top: 200px;
 }
 
-.rank {
+.rank,
+.card-rank {
   color: #37f1a3;
   position: relative;
 }
 
-.movie-detail{
+.movie-detail {
   position: relative;
-
 }
 
 .description {
@@ -190,7 +190,8 @@ nav a:hover {
   font-weight: 700;
 }
 
-.add {
+.add,
+.film {
   border-radius: 50%;
   height: 60px;
   width: 60px;
@@ -220,7 +221,7 @@ nav a:hover {
   margin-top: 50px;
 } */
 
-.movies{
+.movies {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -228,46 +229,87 @@ nav a:hover {
   margin-top: 30px;
 }
 
-.movie-title{
+.movie-title {
   display: flex;
   gap: 50px;
 }
 
-.movie-card-wrapper{
+.movie-card-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 80px;
+  counter-reset: movie-rank;
 }
 
-.movie-card{
+.movie-card {
   display: flex;
   flex-direction: column;
-
   border-radius: 10px;
   position: relative;
   transition: all 1s;
   width: 20vw;
-
+  counter-increment: movie-rank;
 }
 
-.movie-card:hover{
+.movie-card::before {
+  content: counter(movie-rank);
+  position: absolute;
+  font-size: 160px;
+  font-weight: 800;
+  left: -80px;
+  z-index: -1;
+  color: #33363d;
+}
+
+.movie-card:hover {
   transform: scale(1.1);
 }
 
-
-
-.movie-image img{
+.movie-image img {
   height: 22vh;
   width: 100%;
   border-radius: 10px;
 }
 
-.movie-hidden-detail{
+.movie-hidden-detail {
   background-color: black;
   display: none;
-   border-radius: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  top: 100%;
+  left: 0;
+  /* width: 100%; */
+ 
 }
 
-.movie-card:hover .movie-hidden-detail{
+.movie-card:hover .movie-hidden-detail {
   display: block;
+  position: absolute;
+  
+}
 
+.free {
+  font-size: 15px;
+}
+
+.true {
+  background-color: #0072f9;
+  /* border: 5px solid rgb(70, 70, 255); */
+  border-radius: 50%;
+  height: 17px;
+  width: 17px;
+}
+
+.play-btn {
+  height: 40px;
+  width: 180px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-rank {
+  font-size: 18px;
 }
