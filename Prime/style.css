@@ -262,12 +262,14 @@ nav a:hover {
 
 .movie-card:hover {
   transform: scale(1.1);
+  z-index: 20;
 }
 
 .movie-image img {
   height: 22vh;
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .movie-hidden-detail {
@@ -312,4 +314,68 @@ nav a:hover {
 
 .card-rank {
   font-size: 18px;
+}
+
+
+
+
+
+
+.movies-popular {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.movie-title-popular {
+  display: flex;
+  gap: 50px;
+}
+
+.movie-card-wrapper-popular {
+  display: flex;
+  gap: 10px;
+  counter-reset: movie-rank;
+}
+
+.movie-card-popular {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+  transition: all 1s;
+  width: 18vw;
+ 
+}
+
+.movie-card-popular:hover {
+  transform: scale(1.1);
+  z-index: 20;
+}
+
+.movie-image-popular img {
+  height: 18vh;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.movie-hidden-detail-popular {
+  background-color: black;
+  display: none;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  top: 100%;
+  left: 0;
+  /* width: 100%; */
+ 
+}
+
+.movie-card-popular:hover .movie-hidden-detail-popular {
+  display: block;
+  position: absolute;
+  
 }
