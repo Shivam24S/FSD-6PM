@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid yellow;
+}
+
+/* media queries */
+
+@media (width<=400px) {
+  body {
+    background-color: blueviolet;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* orientation */
+
+@media (orientation: landscape) {
+  body {
+    background-color: rgb(74, 228, 255);
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+}
