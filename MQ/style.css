@@ -18,6 +18,16 @@ body {
   border: 2px solid yellow;
 }
 
+@media (orientation: portrait) {
+  body {
+    background-color: grey;
+  }
+
+  .container {
+    justify-content: space-around;
+  }
+}
+
 /* media queries */
 
 @media (width<=400px) {
@@ -39,5 +49,67 @@ body {
 
   .container {
     justify-content: space-between;
+  }
+}
+
+/* old syntax */
+
+/* @media (min-width: 576px) {
+  body {
+    background-color: rgb(86, 19, 241);
+  }
+
+  .box {
+    border: 3px solid black;
+  }
+
+  .container {
+    justify-content: space-evenly;
+  }
+} */
+
+/* @media (max-width: 768px) {
+  body {
+    background-color: rgb(5, 189, 173);
+  }
+
+  .box {
+    border: 3px solid red;
+  }
+
+  .container {
+    justify-content: space-evenly;
+  }
+} */
+
+/* both combine */
+
+/* @media (min-width: 768px) and (max-width: 990px) {
+  body {
+    background-color: rgb(5, 189, 36);
+  }
+
+  .box {
+    border: 3px solid pink;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+} */
+
+/* media queries */
+
+@media print and (max-width: 768px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .box {
+    border: 3px solid black;
+  }
+
+  .container {
+    justify-content: space-around;
   }
 }
